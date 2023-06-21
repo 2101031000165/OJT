@@ -5,107 +5,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: medium;
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            scroll-behavior: smooth;
+        }
+    </style><br>
 </head>
+<Style>
+    li {
+        text-decoration: none;
+        list-style: none;
+        padding: 10px;
+    }
 
-<body bgcolor="#beb068">
-    <center><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_H5X4iws2dV8SdqjWVb9KyFh0OJwDmLOGA&usqp=CAU"
-            height="300px" width="300px">
-    </center>
+    li>a {
+        text-decoration: none;
+        color: brown;
+        font-weight: bold;
+        font-size: large;
+    }
+</Style>
 
-    <h2>
-        <center>Kshitij Restaurant & Banquet
-            RJD Arcade, GST Rd, near Khodiyar Mata Temple Road, New Ranip, Ahmedabad, Gujarat 382480</center>
-    </h2>
-    <br>
-    <h3>
-        <center>TIMING : 11 am–3:30 pm,
-            6:30–11 pm</center>
-    </h3>
-    <h4>
-        <center>Contact No :- 07927592121</center>
-    </h4><br>
-    <hr>
-    <img src="http://www.kshitijrestaurant.co.in/wp-content/uploads/bb-plugin/cache/Kshitij-2-landscape.jpg"
-        height="300px" width="495px">
-    <img src="http://www.kshitijrestaurant.co.in/wp-content/uploads/bb-plugin/cache/Kshitij-Restaurant-Banquet-14-landscape.jpg"
-        height="300px" width="495px">
-    <img src="http://www.kshitijrestaurant.co.in/wp-content/uploads/bb-plugin/cache/Kshitij-3-landscape.jpg"
-        height="300px" width="495px"><br>
+<body bgcolor="#D2B48C">
+    <div class="container">
+        <hr />
+        <nav>
+            <div>
+                <h1 style="color: brown;">Kshitij Restaurant & Banquet</h1>
+            </div>
+            <div id="nav" style="font-size: larger;text-decoration: none;">
+                <li style="text-decoration: none;"><a href="#home">Home</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Gallary">Gallary</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </nav>
+        <hr>
+        <section id="home" class="main-section"></section>
+        <center><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_H5X4iws2dV8SdqjWVb9KyFh0OJwDmLOGA&usqp=CAU"
+                height="300px" width="300px">
+        </center>
 
-    <!-- <div>
+        <br>
+        <hr>
+        <img src="http://www.kshitijrestaurant.co.in/wp-content/uploads/bb-plugin/cache/Kshitij-2-landscape.jpg"
+            height="300px" width="495px">
+        <img src="http://www.kshitijrestaurant.co.in/wp-content/uploads/bb-plugin/cache/Kshitij-Restaurant-Banquet-14-landscape.jpg"
+            height="300px" width="495px">
+        <img src="http://www.kshitijrestaurant.co.in/wp-content/uploads/bb-plugin/cache/Kshitij-3-landscape.jpg"
+            height="300px" width="495px"><br>
 
-    </div>
-    <p>SOUPS</p>
-    <ul>
-        <li>Cream of Tomato souop</li>
-        <li>Tomato corn cheese soup</li>
-        <li>Broccoli cheese soup</li>
-        <li>Jalapeno cheese soup</li>
-    </ul> -->
+        <section id="Menu" class="Menu-section"></section>
 
-    <h1 align="center">Menu</h1>
-    <table align="center">
-        <tr>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOUPS</td></b>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STARTERS</td></b>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAIN COURSE</td></b>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TANDOORI</td></b>
-            <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESERTS</td></b>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Cream of Tomato souop</li>
-                    <li>Tomato corn cheese soup</li>
-                    <li>Broccoli cheese soup</li>
-                    <li>Jalapeno cheese soup</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Veg. Crispy</li>
-                    <li>Veg. Manchurian Dry</li>
-                    <li>Veg. Spring Rolls</li>
-                    <li>Cheese Balls</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Panner Lababdar</li>
-                    <li>Panner Butter Masala</li>
-                    <li>Panner Angara</li>
-                    <li>Panner Toofani</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Butter Roti</li>
-                    <li>Butter Naan</li>
-                    <li>Cheese Naan</li>
-                    <li>Roomali Roti</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Gulab Jamun</li>
-                    <li>Vanilla With Brownie</li>
-                    <li>American Nuts</li>
-                    <li>Kesar Pista</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <br>
+        <h1>
+            <h1 align="center">Menu</h1>
+            <table align="center">
+                <tr>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOUPS
+                    </td></b>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STARTERS</td></b>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAIN COURSE</td></b>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TANDOORI
+                    </td></b>
+                    <td><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESERTS</td></b>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Cream of Tomato souop</li>
+                            <li>Tomato corn cheese soup</li>
+                            <li>Broccoli cheese soup</li>
+                            <li>Jalapeno cheese soup</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Veg. Crispy</li>
+                            <li>Veg. Manchurian Dry</li>
+                            <li>Veg. Spring Rolls</li>
+                            <li>Cheese Balls</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Panner Lababdar</li>
+                            <li>Panner Butter Masala</li>
+                            <li>Panner Angara</li>
+                            <li>Panner Toofani</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Butter Roti</li>
+                            <li>Butter Naan</li>
+                            <li>Cheese Naan</li>
+                            <li>Roomali Roti</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Gulab Jamun</li>
+                            <li>Vanilla With Brownie</li>
+                            <li>American Nuts</li>
+                            <li>Kesar Pista</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </h1>
+        <br>
+        <br>
+        <br>
+        <section id="Gallary" class="Gallary"></section>
+        <h1 align="center">Gallary</h1>
+        <hr>
+        <table cellpadding="29px">
+            <thead>
+                <tr>
+                    <th>
+                        <img src="./download.jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (1).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (2).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (3).jpg" height="295px" width="320px">
+                    </th>
 
-    <center><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.157025138853!2d72.56361237519035!3d23.09134697912564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83099285cac1%3A0xa3f96eab96066d02!2sKshitij%20Restaurant%20%26%20Banquet!5e0!3m2!1sen!2sin!4v1687255074842!5m2!1sen!2sin"
-            width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></center><br>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>Tomato Soup :- ₹99</h2>
+                    </td>
+                    <td>
+                        <h2>Veg.Manchurian Dry :- ₹180</h2>
+                    </td>
+                    <td>
+                        <h2>Panner Butter Masala :- ₹200</h2>
+                    </td>
+                    <td>
+                        <h2>Butter Naan :- ₹38</h2>
+                    </td>
+                </tr>
 
+            </tbody>
+        </table>
+        <hr>
+        <table cellpadding="29px">
+            <thead>
+                <tr>
+                    <th>
+                        <img src="./download (4).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (5).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (6).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (7).jpg" height="295px" width="320px">
+                    </th>
 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>Broccoli cheese soup :- ₹120</h2>
+                    </td>
+                    <td>
+                        <h2>Veg. Spring Rolls :- ₹180</h2>
+                    </td>
+                    <td>
+                        <h2>Panner Angara :- ₹185</h2>
+                    </td>
+                    <td>
+                        <h2>Roomali Roti :- ₹65</h2>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <hr>
+        <table cellpadding="29px">
+            <thead>
+                <tr>
+                    <th>
+                        <img src="./images (1).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (8).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (9).jpg" height="295px" width="320px">
+                    </th>
+                    <th>
+                        <img src="./download (10).jpg" height="295px" width="320px">
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>gulab Jamun :- ₹50</h2>
+                    </td>
+                    <td>
+                        <h2>Vanilla with Brownie :- ₹55</h2>
+                    </td>
+                    <td>
+                        <h2>American Nuts :- ₹70</h2>
+                    </td>
+                    <td>
+                        <h2>Kesar Pista :- ₹70</h2>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <center><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.157025138853!2d72.56361237519035!3d23.09134697912564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83099285cac1%3A0xa3f96eab96066d02!2sKshitij%20Restaurant%20%26%20Banquet!5e0!3m2!1sen!2sin!4v1687255074842!5m2!1sen!2sin"
+                width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></center><br>
+        <section id="contact" class="contact"></section>
+
+        <center>
+            <h2>OPEN HOURS</h2>
+        </center>
+        <center>
+            <h3><u>Restaurant</u></h3>
+        </center>
+        <center>
+            <h3>Lunch: 11.00 AM to 03.30 PM</h3>
+        </center>
+        <center>
+            <h3> Dinner: 6.30 PM to 11.00 PM</h3>
+        </center>
+        <h4>
+            <center>Contact No :- 07927592121</center>
+        </h4>
+        <hr>
+
+        <h2>
+            <center>Kshitij Restaurant & Banquet
+                RJD Arcade, GST Rd, near Khodiyar Mata Temple Road, New Ranip, Ahmedabad, Gujarat 382480</center>
+        </h2>
+        <br>
+        <div id="popupContainer">
+            <div id="popupContent">
+                <h2>Welcome to our Restaurant!</h2>
+                <h4 style="color: darkblue; margin: 1rem;">10% discount for Gujrati Thali</h4>
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
+
+        <script>
+            // Function to close the popup
+            function closePopup() {
+                var popupContainer = document.getElementById('popupContainer');
+                popupContainer.style.display = 'none';
+            }
+
+            // Display the popup when the page loads
+            window.onload = function () {
+                var popupContainer = document.getElementById('popupContainer');
+                popupContainer.style.display = 'flex';
+            }
+
+        </script>
 </body>
 
 </html>
