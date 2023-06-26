@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: medium;
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            scroll-behavior: smooth;
+        }
+
+        * {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #R1 {
+            background-color: darkgray;
+            height: 1rem;
+            width: 98%;
+            margin-bottom: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            display: flex;
+            justify-content: space-around;
+            background-image: url('logo2.jpg');
+        }
+
+        #R2 {
+            height: 7rem;
+            width: 100%;
+            padding-top: -2rem;
+            padding-bottom: 5rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #R2C1 {
+            height: 200px;
+            width: 470px;
+            margin-bottom: 1rem;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R2C2 {
+            height: 200px;
+            width: 470px;
+            margin-bottom: 0rem;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+
+        }
+
+        #R2C3 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R2C4 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R3 {
+            height: 7rem;
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            padding-top: -1rem;
+            padding-bottom: 5rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #R3C1 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R3C2 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+
+        }
+
+        #R3C3 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R3C4 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R4 {
+            height: 7rem;
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            padding-top: -1rem;
+            padding-bottom: 5rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #R4C1 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R4C2 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+
+        }
+
+        #R4C3 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R4C4 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R5 {
+            height: 7rem;
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            padding-top: -1rem;
+            padding-bottom: 5rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #R5C1 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R5C2 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+
+        }
+
+        #R5C3 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R5C4 {
+            height: 200px;
+            width: 470px;
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R6 {
+            height: 14rem;
+            width: 100%;
+            justify-content: space-around;
+            display: flex;
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 1rem;
+            margin-left: 0.5rem;
+        }
+
+        #R7 {
+            height: 14rem;
+            width: 33%;
+            justify-content: space-around;
+            display: flex;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 1rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R8 {
+            height: 14rem;
+            width: 33%;
+            justify-content: space-around;
+            display: flex;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 1rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R9 {
+            height: 14rem;
+            width: 33%;
+            justify-content: space-around;
+            display: flex;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 1rem;
+            margin-right: 1rem;
+            background-repeat: no-repeat;
+        }
+
+        #R10 {
+
+            height: 6rem;
+            width: 98%;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            padding-left: 2rem;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url('https://media.istockphoto.com/id/1182477805/photo/fire-sparks-flying-with-a-blue-smoke-background-animation-3d-rendering.jpg?s=612x612&w=0&k=20&c=28zaMX5YZf9eQf4xM_niIXLfT9FPlowEGIfrK-EMUrE=');">
+    <nav>
+        <div>
+            <h1 style="color: darkblue;">Car Collection</h1>
+        </div>
+        <div id="nav" style="font-size: larger;text-decoration: none;">
+            <li style="text-decoration: none;"><a href="#Gallary">Gallary</a></li>
+            <li><a href="#logo">logo</a></li>
+            <li><a href="#Price">Price</a></li>
+            <li><a href="#Video">Video</a></li>
+        </div>
+    </nav>
+    <div>
+        <hr>
+        <section id="Gallary" class="Gallary-section"></section>
+        <h1 style="color: white;">
+            <center>Gallary</center>
+        </h1>
+        <hr>
+        <div id="R2">
+            <div id="R2C1"><img
+                    src="https://images.unsplash.com/photo-1520031441872-265e4ff70366?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGclMjB3YWdvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px">
+            </div>
+            <div id="R2C2"><img
+                    src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWVyY2VkZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R2C3"><img
+                    src="https://images.unsplash.com/photo-1631295868223-63265b40d9e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cm9sbHMlMjByb3ljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R2C4"><img
+                    src="https://images.unsplash.com/photo-1591293835940-934a7c4f2d9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bXVzdGFuZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+        </div>
+        <div id="R3">
+            <div id="R3C1"><img
+                    src="https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXVzdGFuZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R3C2"><img
+                    src="https://images.unsplash.com/photo-1600016326108-40b24ee22cd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWluaSUyMGNvb3BlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R3C3"><img
+                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym13fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R3C4"><img
+                    src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGF1ZGl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+        </div>
+        <div id="R4">
+            <div id="R4C1"><img
+                    src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmVycmFyaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R4C2"><img
+                    src="https://images.unsplash.com/photo-1603811478698-0b1d6256f79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    height="240px" width="355px"></div>
+            <div id="R4C3"><img
+                    src="https://images.unsplash.com/photo-1538592116845-119a3974c958?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRlc2xhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R4C4"><img
+                    src="https://images.unsplash.com/flagged/photo-1557225586-c21e48488706?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZ2UlMjByb3ZlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+        </div>
+        <div id="R5">
+            <div id="R5C1"><img
+                    src="https://images.unsplash.com/photo-1633867179970-c54688bcfa33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGhhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R5C2"><img
+                    src="https://images.unsplash.com/photo-1619767889550-28064966d63d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9ydHVuZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R5C3"><img
+                    src="https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BvcnQlMjBjYXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+            <div id="R5C4"><img
+                    src="https://images.unsplash.com/photo-1551727324-355cda9f1884?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BvcnQlMjBjYXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    height="240px" width="355px"></div>
+        </div>
+        <hr>
+        <section id="logo" class="logo-section"></section>
+        <h1 style="color: white;">
+            <center><b>logo</b></center>
+        </h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="https://images.unsplash.com/photo-1625074692991-b57f8ff90df6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVyY2VkZXMlMjBsb2dvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px">
+                    </th>
+                    <th><img src="https://images.unsplash.com/photo-1588599038100-1ca38461cba2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJvbGxzJTIwcm95Y2UlMjBsb2dvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px">
+                    </th>
+                    <th><img src="https://images.unsplash.com/photo-1604010378798-bd4aa2853647?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9yc2NoZSUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px">
+                    </th>
+                    <th><img src="https://images.unsplash.com/photo-1607615640588-c49a4bd20a5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFtYm9yZ2hpbmklMjBsb2dvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZlcnJhcmklMjBsb2dvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1564842505178-48d298786d08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWluaSUyMCUyMGNvb3BlciUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1587975732799-395778988cdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bXVzdGFuZyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="https://images.unsplash.com/photo-1562783912-21ad31ee2a83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1haGluZHJhJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1560880745-5f9e76672613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhciUyMGxvZ29zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1617566347924-ad5ebdaa014e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyJTIwbG9nb3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1601158935942-52255782d322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyJTIwbG9nb3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1619679505795-a4d0e6be5e02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNhciUyMGxvZ29zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1612482460557-c4c37ef15916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGNhciUyMGxvZ29zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1499147231799-a36bdf1ee3dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGNhciUyMGxvZ29zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="https://images.unsplash.com/photo-1588036873025-7261a5647adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGNhciUyMGxvZ29zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1546545817-27f0fb006153?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dG95b3RhJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1650285486993-85d2104a1327?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNrb2RhJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1631626749818-39fe46770feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGF1ZGklMjBsb2dvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1617096669863-99641b539ecb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVnYXR0aSUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1645601145648-65bb47e850ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWF5YmFjaCUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                    <th><img src="https://images.unsplash.com/photo-1576020111958-bff2cf17226d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFzZXJhdGklMjBsb2dvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                            height="200px" width="210px"></th>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+        <section id="Price" class="Price"></section>
+        <h1 style="color: white;">
+            <center>Price & Specifications</center>
+        </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th style="color: white;">(1) &nbsp;Mercedes-Benz G-Class Rs. 2.55 Crore:- &nbsp;</th>
+                    <th style="color: white;">⛽ Fuel:- Diesel/</th>
+                    <th style="color: white;">⚙ Engine:- 2925 cc/</th>
+                    <th style="color: white;">🗜 Power and Torque:- 326 bhp/</th>
+                    <th style="color: white;">⏱ Top Speed:- 210 kmph</th>
+                </tr>
+            </thead>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th style="color: white;">(1) &nbsp;Ferrari F8 Tributo Price 4.02 Crore:-
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th style="color: white;">⛽ Fuel:- Petrol/</th>
+                    <th style="color: white;">⚙ Engine:- 3902 cc/</th>
+                    <th style="color: white;">🗜 Power and Torque:- 710.74 bhp/</th>
+                    <th style="color: white;">⏱ Top Speed:- 240 kmph</th>
+                </tr>
+            </thead>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th style="color: white;">(1) &nbsp; Rolls-Royce Phantom 8.99 Crore:-
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th style="color: white;">⛽ Fuel:- Petrol/</th>
+                    <th style="color: white;">⚙ Engine:- 6749 cc/</th>
+                    <th style="color: white;">🗜 Power and Torque:- 563 bhp/</th>
+                    <th style="color: white;">⏱ Top Speed:- 250 kmph</th>
+                </tr>
+            </thead>
+        </table>
+        <hr>
+        <section id="video" class="video"></section>
+        <h1 style="color: white;">
+            <center>video</center>
+        </h1>
+        <hr>
+        <div id="R6">
+            <div id="R7"><video
+                    src="https://player.vimeo.com/external/426199199.sd.mp4?s=ad37abb7b0f4438103e7debd27f95e5264af5f02&profile_id=164&oauth2_token_id=57447761"
+                    autoplay muted loop></video>
+            </div>
+            <div id="R8"><video
+                    src="https://player.vimeo.com/external/426185082.sd.mp4?s=523cfc02f06dfa43c7ecc6e6694b075958bd08f8&profile_id=164&oauth2_token_id=57447761"
+                    autoplay muted loop></video></div>
+            <div id="R9"><video
+                    src="https://player.vimeo.com/progressive_redirect/playback/803819283/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=2c3a717c8c4cab47e2544d54c69e5a34449ff3ad4ab433b26403c91c322f6dc9"
+                    autoplay muted loop></video></div>
+        </div>
+    </div>
+</body>
+
+</html>
