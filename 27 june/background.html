@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="myBody">
+    <select name="color" id="colors">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="black">black</option>
+        <option value="white">white</option>
+    </select>
+    <script>
+        let colors = document.getElementById("colors");
+        let myBody = document.getElementById("myBody");
+        colors.addEventListener("change", () => {
+            myBody.style.backgroundColor = colors.value;
+        })
+    </script>
+</body>
+
+</html>
